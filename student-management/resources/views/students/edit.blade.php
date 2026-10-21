@@ -18,8 +18,7 @@
             </div> 
         @endif 
  
-        <form action="{{ route('students.update', $student) }}" 
-method="POST"> 
+        <form action="{{ route('students.update', $student) }}" method="POST"> 
  
             @csrf 
             @method('PUT') 
@@ -29,8 +28,7 @@ method="POST">
                 <input type="text" 
                        name="student_number" 
                        class="form-control" 
-                       value="{{ old('student_number', $student
->student_number) }}" 
+                       value="{{ old('student_number', $student->student_number) }}" 
                        required> 
             </div> 
  
@@ -39,8 +37,7 @@ method="POST">
                 <input type="text" 
                        name="first_name" 
                        class="form-control" 
-                       value="{{ old('first_name', $student
->first_name) }}" 
+                       value="{{ old('first_name', $student->first_name) }}" 
                        required> 
             </div> 
  
@@ -49,8 +46,7 @@ method="POST">
                 <input type="text" 
                        name="last_name" 
                        class="form-control" 
-                       value="{{ old('last_name', $student
->last_name) }}" 
+                       value="{{ old('last_name', $student->last_name) }}" 
                        required> 
             </div> 
  
@@ -59,8 +55,7 @@ method="POST">
                 <input type="email" 
                        name="email" 
                        class="form-control" 
-                       value="{{ old('email', $student->email) 
-}}" 
+                       value="{{ old('email', $student->email) }}" 
                        required> 
             </div> 
  
@@ -69,8 +64,7 @@ method="POST">
                 <input type="text" 
                        name="course" 
                        class="form-control" 
-                       value="{{ old('course', $student->course) 
-}}" 
+                       value="{{ old('course', $student->course) }}" 
                        required> 
             </div> 
  
